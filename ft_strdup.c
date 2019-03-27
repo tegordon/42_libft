@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/20 14:12:27 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/27 02:17:33 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/27 02:43:09 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,22 @@
 
 #include "libft.h"
 
-char		*ft_strdup(char *src)
+char		*ft_strdup(const char *s1)
 {
 	char	*copy_s;
 	size_t	i;
 
-	if (!src)
+	if (!s1)
 		return (NULL);
-	i = ft_strlen(src);
-	copy_s = malloc(i + 1);
-	if (!copy_s)
+	i = ft_strlen(sr1);
+	if (!(copy_s = malloc(sizeof(char) * i)))
 		return (NULL);
 	i = 0;
-	while (src[i++] != '\0')
-		copy_s[i] = src[i];
+	while (s1[i] != '\0')
+	{
+		copy_s[i] = s1[i];
+		i++;
+	}
 	copy_s[i] = '\0';
 	return (copy_s);
 }
