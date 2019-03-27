@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/16 21:33:28 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/26 23:48:15 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/27 02:50:39 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void		ft_strclr(char *s);
 int			ft_strcmp(const char *s1, const char *s2);
 char		*ft_strcpy(char *dst, const char *src);
 void		ft_strdel(char **as);
-char		*ft_strdup(char *src);
+char		*ft_strdup(const char *s1);
 int			ft_strequ(char const *s1, char const *s2);
 void		ft_striter(char *s, void (*f)(char *));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));
@@ -72,7 +72,7 @@ size_t		ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t		ft_strlen(const char *s);
 char		*ft_strmap(char const *s, char (*f)(char));
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char		*ft_strncat(char *s1, const char *s2, size_t size);
+char		*ft_strncat(char *s1, const char *s2, size_t n);
 int			ft_strncmp(const char *s1, const char *s2, size_t len);
 char		*ft_strncpy(char *dst, const char *src, size_t len);
 int			ft_strnequ(char const *s1, char const *s2, size_t n);
