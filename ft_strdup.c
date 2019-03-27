@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/20 14:12:27 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/27 02:47:38 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/27 07:17:54 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char		*ft_strdup(const char *s1)
 
 	if (!s1)
 		return (NULL);
-	i = ft_strlen(sr1);
+	i = ft_strlen(s1);
 	if (!(copy_s = malloc(sizeof(char) * i)))
 		return (NULL);
 	i = 0;
