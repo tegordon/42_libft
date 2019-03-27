@@ -6,7 +6,7 @@
 #    By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/16 21:39:26 by tegordon          #+#    #+#              #
-#    Updated: 2019/03/27 02:55:12 by tegordon         ###   ########.fr        #
+#    Updated: 2019/03/27 02:56:26 by tegordon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,15 +34,10 @@ OBJ = $(FILES:%.c=%.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-#		$(CC) $(CFLAGS) -c $(FILES) -I libft.h
+$(NAME):
+		$(CC) $(CFLAGS) -c $(FILES) -I libft.h
 		ar rc $(NAME) $(OBJ)
 		ranlib $(NAME)
-
-# This won't run if the source files don't exist or are not modified
-%.o: %.cpp
-	@ echo "[Compiling] $<..."
-	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	rm -f $(OBJ)
