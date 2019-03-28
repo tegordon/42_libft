@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/22 01:14:17 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/28 00:43:59 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 04:53:55 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t			i;
-	char			*buff_dst;
-	char			*buff_src;
+	unsigned char	*buff_dst;
+	unsigned char	*buff_src;
 	unsigned char	buff_c;
 
 	i = 0;
-	buff_dst = (char *)dst;
-	buff_src = (char *)src;
+	buff_dst = (unsigned char *)dst;
+	buff_src = (unsigned char *)src;
 	buff_c = (unsigned char)c;
 	while (i < n)
 	{

@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 17:47:23 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 16:19:26 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 05:36:06 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,10 @@
 
 void		ft_putnbr(int n)
 {
-	ft_putstr(ft_itoa(n));
+	char	*s;
+
+	if (!(s = ft_itoa(n)))
+		return ;
+	ft_putstr(s);
+	free(s);
 }

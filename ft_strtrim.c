@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/24 08:15:04 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 19:44:34 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 05:37:55 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char		*ft_strtrim(char const *s)
 	while (s[i] && ft_iswspace(s[i]))
 		i++;
 	s_buff = ft_strsub(s, (int)i, (j - i));
-	if (!s_buff)
+	if ((!s_buff) || (j - i) == 0 || j == 0)
 		return (NULL);
 	ft_strrev(s_buff);
 	i = 0;

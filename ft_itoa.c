@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/28 01:21:12 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/28 01:28:05 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 05:34:57 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char		*ft_itoa(int n)
 	size_t	len;
 
 	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
+		return (str = ft_strdup("-2147483648"));
 	len = ft_intlen(n);
 	if (!(str = ft_strnew(len)))
 		return (NULL);
