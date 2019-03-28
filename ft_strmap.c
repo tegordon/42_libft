@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/06 07:12:49 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 17:04:30 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 01:29:33 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,14 @@ char			*ft_strmap(char const *s, char (*f)(char))
 
 	if (!s)
 		return (NULL);
-	new_s = ft_strnew(ft_strlen(s));
-	if (!new_s)
+	if (!(new_s = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	i = 0;
-	while (s[i++])
+	while (s[i])
+	{
 		new_s[i] = f(s[i]);
+		i++;
+	}
 	new_s[i] = '\0';
 	return (new_s);
 }

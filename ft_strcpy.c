@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/10 05:59:48 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 16:51:54 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 01:47:48 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+char		*ft_strcpy(char *dst, const char *src)
 {
 	int i;
 

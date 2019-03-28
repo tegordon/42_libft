@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 17:42:48 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 16:19:44 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 01:10:03 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 void		ft_putstr_fd(char const *s, int fd)
 {
-	while (s && *s)
-		ft_putchar_fd(*s++, fd);
+	if (!s)
+		return ;
+	write(fd, s, ft_strlen(s));
 }

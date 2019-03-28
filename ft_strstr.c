@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/15 04:47:23 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 19:27:26 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/27 21:49:29 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *big, const char *little)
+char		*ft_strstr(const char *big, const char *little)
 {
 	int	i;
 

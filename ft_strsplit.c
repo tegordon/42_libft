@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/06 07:15:24 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/27 07:29:27 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/27 07:38:15 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 #include "libft.h"
 
-static int			ft_iswordbegin(char const *s, size_t i, char c)
+static int	ft_iswordbegin(char const *s, size_t i, char c)
 {
 	if (s[i])
 	{

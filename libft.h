@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/16 21:33:28 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/27 07:32:58 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/27 07:38:12 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,8 @@ int					ft_strncmp(const char *s1, const char *s2, size_t len);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
-char				*ft_strnstr(const char *big, const char *little, size_t len);
+char				*ft_strnstr(const char *big, const char *little,
+															size_t len);
 char				*ft_strrev(char *str);
 char				*ft_strrchr(const char *s, int c);
 char				**ft_strsplit(char const *s, char c);
