@@ -6,7 +6,7 @@
 #    By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/16 21:39:26 by tegordon          #+#    #+#              #
-#    Updated: 2019/03/27 02:56:26 by tegordon         ###   ########.fr        #
+#    Updated: 2019/03/28 04:30:57 by tegordon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,8 @@ ft_striter.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
 ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c \
 ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnew.c \
 ft_strnstr.c ft_strrev.c ft_strrchr.c ft_strsplit.c \
-ft_strstr.c ft_strsub.c ft_swap.c ft_tolower.c ft_toupper.c \
-ft_wordccount.c ft_wordcount.c
+ft_strstr.c ft_strsub.c ft_strtrim.c ft_swap.c ft_tolower.c \
+ft_toupper.c ft_wordccount.c ft_wordcount.c
 
 OBJ = $(FILES:%.c=%.o)
 
