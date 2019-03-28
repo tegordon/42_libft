@@ -6,24 +6,24 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/25 18:55:03 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/26 06:58:46 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 09:40:11 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** - Counts words in a string given as argument, using character _delim_c and
-**	 string start and end as delimeters. If any words exist, the count is
-**	 returned with +1 added for null.
+**	 string start and end as delimeters.
 */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_wordccount(char const *s, char delim_c)
 {
 	int	count;
 	int is_word;
 
+	if (!s)
+		return (0);
 	count = 0;
 	is_word = 0;
 	while (*s)
@@ -42,7 +42,5 @@ int		ft_wordccount(char const *s, char delim_c)
 			}
 			s++;
 		}
-	if (count > 0)
-		count += 1;
-	return (count);
+	return (count ? count : 1);
 }

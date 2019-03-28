@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/24 08:15:04 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/28 05:54:53 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 09:01:08 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,15 @@ char		*ft_strtrim(char const *s)
 	char	*s_buff;
 	char	*s_return;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	j = ft_strlen(s);
 	while (s[i] && ft_iswspace(s[i]))
 		i++;
 	if ((j - i) == 0 || j == 0)
-		return (s_buff = "");
-	s_buff = ft_strsub(s, (int)i, (j - i));
-	if (!s_buff)
+		return (ft_strdup(""));
+	if (!(s_buff = ft_strsub(s, (int)i, (j - i))))
 		return (NULL);
 	ft_strrev(s_buff);
 	i = 0;
@@ -43,7 +44,5 @@ char		*ft_strtrim(char const *s)
 	ft_strrev(s_buff);
 	s_return = ft_strsub(s_buff, 0, (j - i));
 	free(s_buff);
-	if (!s_return)
-		return (NULL);
 	return (s_return);
 }

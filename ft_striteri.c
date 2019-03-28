@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/20 11:40:05 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/24 16:56:44 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 08:36:54 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void			ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	size_t	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i] && f)
 	{
