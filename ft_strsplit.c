@@ -6,7 +6,7 @@
 /*   By: tegordon <tegordon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/06 07:15:24 by tegordon          #+#    #+#             */
-/*   Updated: 2019/03/27 07:38:15 by tegordon         ###   ########.fr       */
+/*   Updated: 2019/03/28 06:21:48 by tegordon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char		**ft_strsplit(char const *s, char c)
 
 	if (!(k = ft_wordccount(s, c)))
 		return (NULL);
-	if (!(arr_s = (char **)ft_memalloc(sizeof(char *) * (k))))
+	if (!(arr_s = (char **)ft_memalloc(sizeof(char *) * (k + 1))))
 		return (NULL);
 	i = 0;
 	j = 0;
